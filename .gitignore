@@ -1,0 +1,128 @@
+## Arquivos de build e compilação
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Dd]ebug/
+[Rr]elease/
+[Dd]ebugPublic/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.dbmdl
+*.jfm
+*.pfx
+*.publishsettings
+
+## Rider / IntelliJ
+.idea/
+*.sln.iml
+
+## VS Code
+.vscode/
+*.code-workspace
+
+## Resultados de testes
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+TestResults/
+
+## Publicação / Deploy
+*.pubxml
+*.pubxml.user
+*.publishproj
+PublishScripts/
+publish/
+*.azurePubxml
+
+## ASP.NET Core específico
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
+*.pdb
+*.dll
+*.exe
+*.log
+
+## Segredos e configurações locais
+secrets.json
+*.env
+.env
+.env.local
+*.env.*.local
+UserSecrets/
+
+## NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Entity Framework
+Migrations/*.designer.cs.orig
+
+## Node (caso use frontend integrado, ex: React/Angular)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## Docker
+*.dockerignore.local
+
+## Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+## Backup e temporários
+*.bak
+*.swp
+*~
+*.tmp
+*.cache
+
+## Logs
+logs/
+*.log
+
+## Certificados de desenvolvimento
+*.pfx
+*.p12
+*.key
+*.crt
+
+## Diretórios de dados locais
+*.mdf
+*.ldf
+*.sdf
+LocalDB/
+
+## Arquivos de configuração de ferramentas
+.editorconfig.user
+*.DotSettings.user
+
+## Postman
+postman/
