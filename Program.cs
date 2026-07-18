@@ -10,7 +10,13 @@ Env.Load();
 
 builder.Services.AddControllers();
 
-var connection = builder.Configuration.GetConnectionString("DefaultConnection");
+var host = Environment.GetEnvironmentVariable("POSTGRES_HOST") ?? "localhost";
+var port = Environment.GetEnvironmentVariable("POSTGRES_PORT");
+var database = Environment.GetEnvironmentVariable("POSTGRES_DB");
+var user = Environment.GetEnvironmentVariable("POSTGRES_USER");
+var password = Environment.GetEnvironmentVariable("POSTGRES_PASSWORD");
+
+var connection = $"Host={host};Port={port};Database={database};Username={user};Password={password}";
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connection)

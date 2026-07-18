@@ -2,7 +2,8 @@ namespace Util.Route
 {
     public record LocalPoint
     {
-        public string? city;
-        public string? publicPlace;
+        public int? Id {get; set;}
+        public string? city {get; set;}
+        public string? publicPlace {get; set;}
     }
 }
